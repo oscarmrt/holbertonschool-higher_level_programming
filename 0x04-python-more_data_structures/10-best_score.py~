@@ -1,0 +1,4 @@
+#!/usr/bin/python3
+def best_score(a_dictionary):
+    b_k = max(a_dictionary.values())
+    return [x for x, idx in a_dictionary.items() if idx == best_key][0]
