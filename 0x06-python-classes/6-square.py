@@ -25,15 +25,17 @@ class Square:
             raise ValueError('size must be >= 0')
 
     def my_print(self):
-        if self.__size == 0:
-            print('')
-        else:
+        if self.__size is not 0:
+            for t in range(self.__position[1]):
+                print('')
             for x in range(self.__size):
                 for z in range(self.__position[0]):
                     print(' ', end='')
                 for y in range(self.__size):
                     print('#', end='')
                 print('')
+        else:
+            print('')
 
     @property
     def position(self):
