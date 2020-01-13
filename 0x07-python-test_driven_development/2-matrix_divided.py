@@ -7,7 +7,7 @@ Write a function that divides all elements of a matrix.
 
 
 def matrix_divided(matrix, div):
-    """This function adds two integers."""
+    """This function divides all elements of a matrix."""
     matrix_size = None
     if type(matrix) is not list:
         raise TypeError(
