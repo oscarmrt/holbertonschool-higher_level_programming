@@ -14,3 +14,21 @@ check function docstring:
         >>> function = __import__("4-print_square").print_square.__doc__
         >>> len(function) > 1
         True
+
+check if size is an integer:
+        >>> print_square("H")
+        Traceback (most recent call last):
+        ...
+        TypeError: size must be an integer
+
+check if size is positive:
+        >>> print_square(-7)
+        Traceback (most recent call last):
+        ...
+        ValueError: size must be >= 0
+
+check if size is a float and positive:
+        >>> print_square(-0.5)
+        Traceback (most recent call last):
+        ...
+        TypeError: size must be an integer

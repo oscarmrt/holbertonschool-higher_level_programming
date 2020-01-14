@@ -14,3 +14,10 @@ check function docstring:
         >>> function = __import__("5-text_indentation").text_indentation.__doc__
         >>> len(function) > 1
         True
+
+check if text is a string:
+        >>> text_indentation(10)
+        Traceback (most recent call last):
+        ...
+        TypeError: text must be a string
+ 
