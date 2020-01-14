@@ -15,3 +15,15 @@ check function docstring:
         >>> len(function) > 1
         True
 
+check positive add:
+        >>> add_integer(6, 6)
+        12
+
+check float:
+        >>> add_integer(2.5, 2.2)
+        4
+
+check negative add:
+        >>> add_integer(-2, -4)
+        -6
+
