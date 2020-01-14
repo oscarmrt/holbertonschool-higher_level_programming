@@ -27,3 +27,14 @@ check negative add:
         >>> add_integer(-2, -4)
         -6
 
+check integer or float:
+        >>> add_integer("H", 6)
+        Traceback (most recent call last):
+        ...
+        TypeError: a must be an integer
+
+check integer or float:
+        >>> add_integer(10, "X")
+        Traceback (most recent call last):
+        ...
+        TypeError: b must be an integer

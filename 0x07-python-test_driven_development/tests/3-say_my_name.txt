@@ -14,3 +14,19 @@ check function docstring:
         >>> function = __import__("3-say_my_name").say_my_name.__doc__
         >>> len(function) > 1
         True
+
+check first name and last name:
+        >>> say_my_name("Oscar", "Rodriguez")
+        My name is Oscar Rodriguez
+
+check first name
+        >>> say_my_name(3, "Rodriguez")
+        Traceback (most recent call last):
+        ...
+        TypeError: first_name must be a string
+
+check last name
+        >>> say_my_name("Oscar", 10)
+        Traceback (most recent call last):
+        ...
+        TypeError: last_name must be a string
