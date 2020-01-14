@@ -1,0 +1,16 @@
+Module ``3-say_my_name``
+
+using ``say_my_name``
+
+import function:
+        >>> say_my_name = __import__("3-say_my_name").say_my_name
+
+check module docstring:
+        >>> module = __import__("3-say_my_name").__doc__
+        >>> len(module) > 1
+        True
+
+check function docstring:
+        >>> function = __import__("3-say_my_name").say_my_name.__doc__
+        >>> len(function) > 1
+        True

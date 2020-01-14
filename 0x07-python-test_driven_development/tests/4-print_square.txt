@@ -1,0 +1,16 @@
+Module ``4-print_square``
+
+using ``print_square``
+
+import function:
+        >>> print_square = __import__("4-print_square").print_square
+
+check module docstring:
+        >>> module = __import__("4-print_square").__doc__
+        >>> len(module) > 1
+        True
+
+check function docstring:
+        >>> function = __import__("4-print_square").print_square.__doc__
+        >>> len(function) > 1
+        True

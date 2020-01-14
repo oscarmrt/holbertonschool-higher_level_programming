@@ -1,0 +1,16 @@
+Module ``2-matrix_divided``
+
+using ``matrix_divided``
+
+import function:
+        >>> matrix_divided = __import__("2-matrix_divided").matrix_divided
+
+check module docstring:
+        >>> module = __import__("2-matrix_divided").__doc__
+        >>> len(module) > 1
+        True
+
+check function docstring:
+        >>> function = __import__("2-matrix_divided").matrix_divided.__doc__
+        >>> len(function) > 1
+        True
