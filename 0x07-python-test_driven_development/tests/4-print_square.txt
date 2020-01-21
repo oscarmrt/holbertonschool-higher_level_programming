@@ -50,3 +50,6 @@ check none
         Traceback (most recent call last):
         ...
         TypeError: size must be an integer
+
+check zero prints nothing
+        >>> print_square(0)
