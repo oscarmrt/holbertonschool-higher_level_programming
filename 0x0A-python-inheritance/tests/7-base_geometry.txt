@@ -37,3 +37,9 @@ check type:
         Traceback (most recent call last):
         ...
         TypeError: string must be an integer
+
+check type:
+        >>> bg.integer_validator("float", 2.7)
+        Traceback (most recent call last):
+        ...
+        TypeError: float must be an integer
