@@ -21,3 +21,11 @@ check if text is a string:
         ...
         TypeError: text must be a string
  
+ check text without arguments
+        >>> text_indentation()
+        Traceback (most recent call last):
+        ...
+        TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+check string with blank line
+        >>> text_indentation("   ")
