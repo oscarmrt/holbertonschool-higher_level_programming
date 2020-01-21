@@ -1,0 +1,28 @@
+Module ``1-my_list``
+
+using ``MyList``
+
+import function:
+        >>> MyList = __import__("1-my_list").MyList
+
+check class docstring:
+        >>> cl = __import__("1-my_list").MyList.__doc__
+        >>> len(cl) > 1
+        True
+
+check empty list:
+        >>> list = MyList()
+        >>> list.print_sorted()
+        []
+
+check correct list appended:
+        >>> list.append(6)
+        >>> list.append(7)
+        >>> list.append(9)
+        >>> list.append(8)
+        >>> print(list)
+        [6, 7, 9, 8]
+
+check correct list sorted:
+        >>> list.print_sorted()
+        [6, 7, 8, 9]
