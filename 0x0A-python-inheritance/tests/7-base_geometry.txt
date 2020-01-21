@@ -1,0 +1,39 @@
+Module ``7-base_geometry``
+
+using ``BaseGeometry``
+
+import function:
+        >>> BaseGeometry = __import__("7-base_geometry").BaseGeometry
+
+check class docstring:
+        >>> cl = __import__("7-base_geometry").BaseGeometry.__doc__
+        >>> len(cl) > 1
+        True
+        
+check area:
+        >>> bg = BaseGeometry()
+        >>> bg.area()
+        Traceback (most recent call last):
+        ...
+        Exception: area() is not implemented
+
+check for right integer:
+        >>> bg.integer_validator("integer", 2)
+
+check negative integer:
+        >>> bg.integer_validator("integer", -3)
+        Traceback (most recent call last):
+        ...
+        ValueError: integer must be greater than 0
+
+check integer = 0:
+        >>> bg.integer_validator("integer", 0)
+        Traceback (most recent call last):
+        ...
+        ValueError: integer must be greater than 0
+
+check type:
+        >>> bg.integer_validator("string", "hbtn")
+        Traceback (most recent call last):
+        ...
+        TypeError: string must be an integer
