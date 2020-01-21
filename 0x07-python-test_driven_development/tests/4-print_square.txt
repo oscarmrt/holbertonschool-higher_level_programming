@@ -44,3 +44,9 @@ check inf
         Traceback (most recent call last):
         ...
         TypeError: size must be an integer
+
+check none
+        >>> print_square(float('nan'))
+        Traceback (most recent call last):
+        ...
+        TypeError: size must be an integer
