@@ -48,3 +48,9 @@ One argument at least is needed
         Traceback (most recent call last):
                 ...
         TypeError: a must be an integer
+
+NaN test
+        >>> add_integer(float('nan'))
+        Traceback (most recent call last):
+                ...
+        ValueError: cannot convert float NaN to integer
