@@ -38,3 +38,13 @@ check integer or float:
         Traceback (most recent call last):
         ...
         TypeError: b must be an integer
+
+Only one argument
+        >>> add_integer(10)
+        108
+
+One argument at least is needed
+        >>> add_integer(None)
+        Traceback (most recent call last):
+        ...
+        TypeError: a must be an integer
