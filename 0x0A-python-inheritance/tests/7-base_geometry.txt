@@ -43,3 +43,27 @@ check type:
         Traceback (most recent call last):
         ...
         TypeError: float must be an integer
+
+check type:
+        >>> bg.integer_validator("boolean", False)
+        Traceback (most recent call last):
+        ...
+        TypeError: boolean must be an integer
+
+check type:
+        >>> bg.integer_validator("complex", complex(2, 1))
+        Traceback (most recent call last):
+        ...
+        TypeError: complex must be an integer
+
+check type:
+        >>> bg.integer_validator("dictionary", {"key": "value"})
+        Traceback (most recent call last):
+        ...
+        TypeError: dictionary must be an integer
+
+check type:
+        >>> bg.integer_validator("set", {"holberton", "school"})
+        Traceback (most recent call last):
+        ...
+        TypeError: set must be an integer
