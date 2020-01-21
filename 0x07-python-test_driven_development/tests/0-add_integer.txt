@@ -30,13 +30,13 @@ check negative add:
 check integer or float:
         >>> add_integer("H", 6)
         Traceback (most recent call last):
-        ...
+                ...
         TypeError: a must be an integer
 
 check integer or float:
         >>> add_integer(10, "X")
         Traceback (most recent call last):
-        ...
+                ...
         TypeError: b must be an integer
 
 Only one argument
@@ -46,5 +46,5 @@ Only one argument
 One argument at least is needed
         >>> add_integer(None)
         Traceback (most recent call last):
-        ...
+                ...
         TypeError: a must be an integer
