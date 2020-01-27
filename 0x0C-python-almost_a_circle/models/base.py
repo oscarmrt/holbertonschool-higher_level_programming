@@ -41,3 +41,11 @@ class Base:
         filename = cls.__name__ + '.json'
         with open(filename, "w") as file:
             file.write(objct)
+
+    @staticmethod
+    def from_json_string(json_string):
+        """ from_json_string function
+        """
+        if json_string is None:
+            return []
+        return json.loads(json_string)
