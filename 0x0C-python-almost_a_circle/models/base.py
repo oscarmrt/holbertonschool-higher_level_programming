@@ -49,3 +49,17 @@ class Base:
         if json_string is None:
             return []
         return json.loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        """ create function
+        """
+        if cls.__name__ == "Rectangle":
+            dummy = cls(10, 6)
+            dummy.update(**dictionary)
+            return dummy
+
+        if cls.__name__ == "Square":
+            dummy = cls(10)
+            dummy.update(**dictionary)
+            return dummy
