@@ -24,5 +24,5 @@ class Base:
         """ to_json_string function
         """
         if list_dictionaries is None or len(list_dictionaries) == 0:
-            return (list_dictionaries = [])
+            list_dictionaries = []
         return json.dumps(list_dictionaries)
