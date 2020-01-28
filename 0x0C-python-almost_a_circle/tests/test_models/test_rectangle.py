@@ -7,7 +7,7 @@ Tests for class rectangle
 import unittest
 import json
 from models.base import Base
-from models import base
+from models import rectangle
 Rectangle = rectangle.Rectangle
 
 
