@@ -63,3 +63,19 @@ class Base:
             dummy = cls(10)
             dummy.update(**dictionary)
             return dummy
+
+    @classmethod
+    def load_from_file(cls):
+        """ load_from_file function
+        """
+        filename = cls.__name__ + ".json"
+        inst = []
+        try:
+            txt = []
+            with open(filename, 'r') as file:
+                txt = cls.from_json_string(file.read())
+                for objct in txt:
+                    inst.append(cls.create(**objct))
+        except:
+            pass
+        return inst
