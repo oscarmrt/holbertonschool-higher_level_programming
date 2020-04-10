@@ -16,10 +16,10 @@ def find_peak_aux(intList, low, high, n):
 
 def find_peak(list_of_integers):
     '''function that finds a peak in a list of unsorted integers'''
-    if len(list_of_integers) == 0:
+    n = len(list_of_integers)
+    if n == 0:
         return None
-    elif len(list_of_integers) == 1:
+    elif n == 1:
         return list_of_integers[0]
     else:
-        return find_peak_aux(list_of_integers, 0, len(list_of_integers) - 1,
-                             len(list_of_integers))
+        return find_peak_aux(list_of_integers, 0, n - 1, n)
