@@ -1,11 +1,10 @@
 #!/usr/bin/node
 
+let secondBig = 0;
 const arg = process.argv;
 const arglength = process.argv.length;
-if (arglength <= 3) {
-  console.log(0);
-} else {
+if (arglength > 3) {
   arg.sort();
-  const secondBig = arg[arglength - 2];
-  console.log(secondBig);
+  secondBig = arg[arglength - 2];
 }
+console.log(secondBig);
