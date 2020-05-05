@@ -1,1 +1,1 @@
-This repository is about Python and Javascript.
+This repository is about Python and Javascript programming language.
