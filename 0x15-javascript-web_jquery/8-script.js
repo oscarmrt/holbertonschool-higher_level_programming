@@ -3,7 +3,7 @@ $(() => {
     if (textStatus === 'success') {
       const titles = data.results;
       for (const titleName in titles) {
-        $('UL.#list_movies').append(`<li>${titles[titleName].title}</li>`);
+        $('#list_movies').append(`<li>${titles[titleName].title}</li>`);
       }
     }
   });
